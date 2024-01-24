@@ -1,10 +1,15 @@
-﻿double speed = double.Parse(Console.ReadLine());
+﻿string ticket = Console.ReadLine();
 
-if (speed <=30 )
-{
-    Console.WriteLine("Slow");
+
+if  (ticket == "student")
+{ 
+    Console.WriteLine($"{"$1.00"}"); 
 }
-else if (speed > 30)
+else if (ticket == "regular")
 {
-    Console.WriteLine("Fast");
+    Console.WriteLine($"{"$1.60"}");
+}
+else
+{
+    Console.WriteLine("Invalid ticket type!");
 }
