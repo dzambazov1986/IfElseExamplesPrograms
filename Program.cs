@@ -1,10 +1,10 @@
-﻿string password = (Console.ReadLine());   
+﻿int waterTemperature = int.Parse(Console.ReadLine());
 
-if  (password == "s3cr3t!")
+if  (waterTemperature > 100)
 {
-    Console.WriteLine("Welcome");
+    Console.WriteLine("The water is boiling");
 }
-else
+else if (waterTemperature <= 100)
 {
-    Console.WriteLine("Wrong password!");
+    Console.WriteLine("The water is not hot enough");
 }
