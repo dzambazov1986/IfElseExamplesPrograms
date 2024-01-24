@@ -1,16 +1,45 @@
-﻿string drinkType = Console.ReadLine();
-string extra = Console.ReadLine();
-double price = 0;
-if (drinkType == "coffee")
+﻿int number = int.Parse(Console.ReadLine());
+
+if  (number == 0)
 {
-     price = 1.00;
+    Console.WriteLine("zero");
 }
-else if (drinkType == "tea")
+else if (number == 1)
+{
+    Console.WriteLine("one");
+}
+else if (number == 2)
+{
+    Console.WriteLine("two");
+}
+else if (number == 3)
+{
+    Console.WriteLine("three");
+}
+else if(number == 4)
+{
+    Console.WriteLine("four");
+}
+else if (number == 5)
 { 
-     price = 0.60;
+    Console.WriteLine("five"); 
 }
-if (extra == "sugar")
-{ 
-    price = price + 0.40;
+else if (number == 6)
+{
+    Console.WriteLine("six");
 }
-Console.WriteLine($"Final price: ${price:F2}");
+else if (number == 7)
+{
+    Console.WriteLine("seven");
+}
+else if (number == 8)
+{
+    Console.WriteLine("eight");
+}
+else if (number == 9)
+{
+    Console.WriteLine("nine");
+}
+else 
+    { Console.WriteLine("Out of range"); 
+}
