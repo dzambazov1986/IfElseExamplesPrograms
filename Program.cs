@@ -1,10 +1,10 @@
-﻿int waterTemperature = int.Parse(Console.ReadLine());
+﻿double speed = double.Parse(Console.ReadLine());
 
-if  (waterTemperature > 100)
+if (speed <=30 )
 {
-    Console.WriteLine("The water is boiling");
+    Console.WriteLine("Slow");
 }
-else if (waterTemperature <= 100)
+else if (speed > 30)
 {
-    Console.WriteLine("The water is not hot enough");
+    Console.WriteLine("Fast");
 }
