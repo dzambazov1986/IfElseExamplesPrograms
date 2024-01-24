@@ -1,15 +1,12 @@
-﻿string ticket = Console.ReadLine();
+﻿using System.ComponentModel.Design;
 
+int sideA = int.Parse(Console.ReadLine());
+int sideB =  int.Parse(Console.ReadLine()); 
+int sideC =  int.Parse(Console.ReadLine());
 
-if  (ticket == "student")
-{ 
-    Console.WriteLine($"{"$1.00"}"); 
-}
-else if (ticket == "regular")
+if (sideA < sideB + sideC &&sideB < sideA + sideC && sideC < sideA + sideB)
 {
-    Console.WriteLine($"{"$1.60"}");
+    Console.WriteLine("Valid Triangle");
 }
 else
-{
-    Console.WriteLine("Invalid ticket type!");
-}
+ Console.WriteLine("Invalid Triangle"); 
