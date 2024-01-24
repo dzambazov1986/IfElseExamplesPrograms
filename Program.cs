@@ -1,12 +1,16 @@
-﻿using System.ComponentModel.Design;
-
-int sideA = int.Parse(Console.ReadLine());
-int sideB =  int.Parse(Console.ReadLine()); 
-int sideC =  int.Parse(Console.ReadLine());
-
-if (sideA < sideB + sideC &&sideB < sideA + sideC && sideC < sideA + sideB)
+﻿string drinkType = Console.ReadLine();
+string extra = Console.ReadLine();
+double price = 0;
+if (drinkType == "coffee")
 {
-    Console.WriteLine("Valid Triangle");
+     price = 1.00;
 }
-else
- Console.WriteLine("Invalid Triangle"); 
+else if (drinkType == "tea")
+{ 
+     price = 0.60;
+}
+if (extra == "sugar")
+{ 
+    price = price + 0.40;
+}
+Console.WriteLine($"Final price: ${price:F2}");
